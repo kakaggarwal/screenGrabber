@@ -6,7 +6,7 @@ import os
 def grabScreenFunc():
     screenGrab = ImageGrab.grab(None, True, True)
 
-    fileName = datetime.datetime.now().strftime(".\captures\%Y-%m-%dT%H-%M-%S.png")
+    fileName = datetime.datetime.now().strftime("./captures/%Y-%m-%dT%H-%M-%S.png")
 
     screenGrab.save(fileName, 'PNG')
 
